@@ -37,14 +37,19 @@ for ( let i = 0; i < squadre.length; i++ ) {
 const newSquadre = [];
 
 for ( let i = 0; i < squadre.length; i++ ) {
+    
     const {nome, falliSubiti}  = squadre[i];
-    const squadra = {
+
+    // const squadra = {
+    //     nome,
+    //     falliSubiti
+    // };
+    // newSquadre.push(squadra);
+
+    newSquadre.push({
         nome,
         falliSubiti
-    };
-    newSquadre.push(squadra);
+    });
 }
 
 console.log(newSquadre);
-
-
